@@ -43,6 +43,11 @@ public class NodoDoble<T> {
     public void setAnt(NodoDoble ant) {
         this.ant = ant;
     }
+
+    @Override
+    public String toString() {
+        return "NodoDoble{" + "dato=" + dato + '}';
+    }
     
     
 }

@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class Main {
     public static void main(String[] args) {
-        
+       /* 
         NodoDoble<String> nodo1= new NodoDoble<>("A");
         System.out.println("Info del nodo: "+nodo1.getDato());
         
@@ -32,7 +32,18 @@ public class Main {
         for (Object info : nodo3.getDato()) {
             System.out.println("Info del nodo: "+info);
         }
-        
+        */
        
+       ListaDoble<String> listaDoble=new ListaDoble<String>();
+       listaDoble.agregarNodo("A");
+       listaDoble.agregarNodo("B");
+       listaDoble.agregarNodo("C");
+       listaDoble.agregarNodo("D");
+       //listaDoble.mostrarLista();
+       
+       NodoDoble c= ((listaDoble.getPTR()).getSig().getSig());
+        System.out.println("Dato: "+c.getSig().toString());
+       
+        //System.out.println("Dato: "+(c.getAnt()).getAnt());
     }
 }
